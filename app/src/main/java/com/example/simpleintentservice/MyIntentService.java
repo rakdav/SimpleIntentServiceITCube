@@ -26,7 +26,7 @@ public class MyIntentService extends IntentService {
     protected void onHandleIntent(Intent intent) {
        Intent broadcastIntent=new Intent();
        broadcastIntent.setAction(MyIntentService.ACTION_1);
-        for (int i = 0; i <100 ; i++) {
+        for (int i = 0; i <=100 ; i++) {
             broadcastIntent.putExtra(PARAM_PERCENT,i);
             sendBroadcast(broadcastIntent);
             SystemClock.sleep(100);
